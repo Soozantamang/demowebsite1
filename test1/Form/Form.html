@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+  </head>
+
+  <body>
+
+    <h1 id="title">FantasticAdvNepal Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the website</p>
+    <form id="survey-form">
+      <div class="label">
+        <label id="name-label">Name</label>
+        <input id="name" type="text" required placeholder="Enter your Name">
+      </div>
+      <div class="label">
+        <label id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="label">
+        <label id="number-label">Age</label>
+        <input id="number" type="number" required min="16" max="55" placeholder="number" value="number">
+      </div>
+      <div class="label">
+        <label id="select-label">What makes you visit again nepal?</label>
+        <div>
+          <select id="dropdown">
+            <option>culture</option>
+            <option>Treking</option>
+            <option>Activites</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>Would you recommend Nepal to a friend?</label>
+        <div>
+          <label><input type="radio" name="recommend" value="Definitely">Definitely</label>
+        </div>
+        <div>
+          <label><input type="radio" name="recommend" value="Maybe">Maybe</label>
+        </div>
+      </div>
+      <div>
+        <label>What is your favorite feature of our website regarding package?</label>
+        <div>
+          <label><input type="checkbox" name="idea" value="Feature">Feature</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="idea" value="Contact">Contact with client</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="idea" value="Design">Design</label>
+        </div>
+      </div>
+      <div class="label">
+        <div><label>Any comments or suggestions?</label></div>
+        <textarea text="text"></textarea>
+      </div>
+      <div>
+        <button type="submit" id='submit'>Submit</button>
+      </div>
+    </form>
+  </body>
+
+</html>

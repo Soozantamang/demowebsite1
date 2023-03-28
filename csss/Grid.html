@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        padding: 10px;
+      }
+
+      .box {
+        max-width: 700px;
+        height: 700px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* fr------fill row/column */
+        grid-template-rows: 1fr 1fr;
+        /* align-content: center;
+        justify-content: center; */
+        grid-template-areas:
+          "header header header"
+          "section section sidebar"
+          "section section sidebar"
+          "footer footer footer";
+        ;
+      }
+
+      .box1 {
+        background-color: rgb(255, 0, 0);
+        grid-area: section;
+      }
+
+      .box2 {
+        background-color: yellow;
+        grid-area: sidebar;
+
+      }
+
+      .box3 {
+        background-color: green;
+        grid-area: footer;
+      }
+
+      .box4 {
+        background-color: rebeccapurple;
+        grid-area: header;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="box1">One</div>
+      <div class="box2">Two</div>
+      <div class="box3">Three</div>
+      <div class="box4">Four</div>
+    </div>
+  </body>
+
+</html>

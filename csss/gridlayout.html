@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+
+
+
+      :root {
+        --main-color: #202124;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        /* width: 100%; */
+        padding-left: 8%;
+        padding-right: 8%;
+
+        overflow: hidden;
+      }
+
+      .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      nav {
+        flex: 1;
+        text-align: right;
+        width: 100%;
+      }
+
+      nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 14;
+      }
+
+      nav ul li a:hover {
+        color: orange;
+      }
+
+      @media only screen and (max-width: 700px; ) {
+        nav ul {
+          width: 100%;
+          background: white;
+          position: absolute;
+          top: 75px;
+          right: 0;
+          z-index: 2;
+        }
+
+        nav ul li {
+          display: block;
+          margin-top: ;
+        }
+
+        .menu {
+          display: block;
+        }
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      img {
+        width: 100%;
+        /* border: 7px solid black; */
+        border-radius: 5px;
+      }
+
+      .feature {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .menu {
+        width: 25px;
+        cursor: pointer;
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="Container">
+      <div class="Navbar">
+        <img
+          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Ftags%2Flogo&psig=AOvVaw34-Sw4ABD1sfv8Fz8OPr6t&ust=1679828398318000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNjQzcr29v0CFQAAAAAdAAAAABAJ">
+        <nav>
+          <ul id="menulist">
+            <li><a class="active" href="#hero">Home </a></li>
+            <li><a href="#services"> Service </a></li>
+            <li><a href="#projects"> Experience </a></li>
+            <li><a href="#about"> About </a></li>
+          </ul>
+        </nav>
+        <div class="menu">
+          <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="grid">
+
+
+      <div class="feature">
+        <img
+          src="https://images.unsplash.com/photo-1599502459276-78d01f84c5c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJhbGxvbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt="">
+        <div class="info">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae odio ipsum neque! Atque fugit
+            dolores molestiae, velit adipisci dolore itaque obcaecati tenetur repudiandae laudantium!</p>
+        </div>
+
+      </div>
+
+
+
+      <div class="article">
+        <img
+          src="https://images.unsplash.com/photo-1599502459276-78d01f84c5c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJhbGxvbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt="">
+        <div class="info">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae odio ipsum neque! Atque fugit
+            dolores molestiae, velit adipisci dolore itaque obcaecati tenetur repudiandae laudantium!</p>
+        </div>
+
+      </div>
+
+      <div class="article">
+        <img
+          src="https://images.unsplash.com/photo-1599502459276-78d01f84c5c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJhbGxvbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt="">
+        <div class="info">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae odio ipsum neque! Atque fugit
+            dolores molestiae, velit adipisci dolore itaque obcaecati tenetur repudiandae laudantium!</p>
+        </div>
+
+
+
+      </div>
+
+      <div class="article">
+        <img
+          src="https://images.unsplash.com/photo-1599502459276-78d01f84c5c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJhbGxvbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt="">
+        <div class="info">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae odio ipsum neque! Atque fugit
+            dolores molestiae, velit adipisci dolore itaque obcaecati tenetur repudiandae laudantium!</p>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <script>
+      var menulist = document.getElementById("menulist");
+      menulist.style.maxHeight = "0px"
+      function togglemenu() {
+        if (menulist.style.maxHeight == "0px") {
+          menulist.style.maxHeight == "130px";
+        }
+        else {
+          menulist.style.maxHeight == "0px";
+        }
+      }
+    </script>
+
+  </body>
+
+</html>

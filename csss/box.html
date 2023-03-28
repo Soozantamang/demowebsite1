@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* defult ma margin ra padding ma value huncha  */
+
+      }
+
+      .box {
+        background-color: black;
+        height: 600px;
+        padding: auto;
+        /* top right bottom left */
+        margin: 0 auto;
+        /* for algin margin to middle */
+        width: 600px;
+        /* vw: view width / for full width accor. to device  OR min-width / max-width is for making range to object */
+        box-sizing: border-box;
+        position: relative;
+        z-index: 1;
+        /* yo attribute le chai layer ko lagi aagadi ra pachadi garne kamm garcha */
+      }
+
+      .box1 {
+        background-color: rgb(230, 0, 0);
+        position: absolute;
+        height: 200px;
+        width: 200px;
+      }
+
+      .box2 {
+        background-color: rgb(0, 162, 255);
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        top: 200px;
+        left: 200px;
+
+      }
+
+      .box3 {
+        background-color: rgb(0, 255, 191);
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap');
+
+      body {
+        font-family: 'Inconsolata', monospace;
+        font-size: 20px;
+      }
+
+      .box p {}
+
+      a:hover {
+        background-color: blueviolet;
+      }
+
+      a:active {
+        color: black;
+      }
+
+      /* a:visited {
+        color: silver;
+      } */
+
+      .box p::before {
+        content: "Imp: ";
+        color: red;
+        font-weight: bold;
+      }
+
+      .box p::after {
+        content: "See more ";
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ea eos! In cumque accusantium veniam
+        reprehenderit, suscipit numquam? A porro aspernatur tempora rerum. Earum quia ex voluptate quos ab cupiditate?
+      </p>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quam ea, repellat sint accusamus exercitationem
+      eum, tenetur, cupiditate facere modi reiciendis adipisci officia optio fuga autem tempora. Accusantium, animi.
+      Neque?
+    </p>
+  </body>
+
+</html>

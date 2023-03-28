@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-image: url(colin-watts-tK7Itp99R6M-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+
+  /* background-size: 920px 1920px; */
+
+}
+
+#boxcontent {
+  text-align: center;
+  padding-top: 20%;
+
+}
+
+h1 {
+  font-size: 120px;
+  font-family: 'Allura', cursive;
+  color: white;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.box p {
+  /* width: 250px; */
+  background-color: white;
+  /* word-wrap: break-all; */
+  /* word-break: break-all; */
+}
+
+/* p {
+  padding-top: 25%;
+  margin-top: 0;
+} */

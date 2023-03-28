@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <h2>Contact</h2>
+    <p>follow me at <a name="scroll">social media</a></p>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3670/3670147.png">
+    <a href=""><img src="https://1000logos.net/wp-content/uploads/2016/11/fb-logo.jpg" alt="facebook" height="100px"
+        width=""></a>
+    <a href=""><img src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266__340.jpg" height="110px"
+        alt="Instragram"></a>
+    <a href=""><img
+        src="https://img.freepik.com/premium-vector/red-youtube-logo-social-media-logo_197792-1803.jpg?w=2000"
+        alt="youtube" height="125"></a>
+    <br>
+    <form action="mailto:heysujen@gmail.com?subject=hello" method="post">
+      <fieldset>
+        <legend>
+          <h1>Bio</h1>
+        </legend>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" alt="email" value="heysujen@gmail.com"
+            placeholder="Enter your email" required>
+        </p>
+
+        <p>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="enter your name" required>
+        </p>
+        <p>
+        <h2>Enter Your Gender</h2>
+        <label for="male">male</label>
+        <input type="radio" id="male" name="Gender" required>
+        <label for="female">female</label>
+        <input type="radio" id="female" name="Gender" required>
+        </p>
+        <p>
+        <h2>What you do in free time?</h2>
+        <label for="play">Playing</label>
+        <input type="checkbox" id="play" name="play" required>
+        <label for="study">Studing</label>
+        <input type="checkbox" id="study" name="study" required>
+        </p>
+        <label for="fav">favourite</label>
+        <select name="fav" id="fav">
+          <optgroup label="Iced group">
+            <option value="iced latte">Iced latte</option>
+            <option value="iced mocha">Iced mocha</option>
+
+          </optgroup>
+          <option value="latte">latte</option>
+          <option value="mocha" selected>mocha</option>
+          <option value="expresso">expresso</option>
+        </select>
+        <p>
+          <label for="date">Join date</label>
+          <input type="date" id="date" name="date">
+        </p>
+        <P>
+          <label for="image">select file</label>
+          <input type="file" id="image" name="image" accept="image/*">
+        </P>
+        <p>
+          <label for="msg">Message</label>
+        <div>
+          <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </div>
+        </p>
+
+
+        <p>
+          <button type="submit">submit</button>
+          <button type="reset">Reset</button>
+        </p>
+
+      </fieldset>
+    </form>
+
+  </body>
+
+</html>

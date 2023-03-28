@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container</title>
+
+    <style>
+      .container {
+        border: 1px solid black;
+        max-width: 500px;
+        height: 500px;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 20px;
+        /* row-gap: 10px; */
+      }
+
+      .i {
+        width: 100px;
+        /* flex-basis: 20%; -------- Its works as common width */
+
+      }
+
+      .box {
+        background-color: rgb(0, 0, 0);
+        /* order: 3;  --------- for managing order of the container */
+        s
+      }
+
+      .box1 {
+        background-color: rgb(255, 0, 0);
+        /* order: 1; */
+      }
+
+      .box2 {
+        background-color: rgb(23, 219, 111);
+        /* order: 4; */
+      }
+
+      .box3 {
+        background-color: rgb(51, 6, 212);
+        /* order: 2; */
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box i">box</div>
+      <div class="box1 i">box1</div>
+      <div class="box2 i">box2</div>
+      <div class="box3 i">box3</div>
+    </div>
+
+  </body>
+
+</html>
